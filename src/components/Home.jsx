@@ -62,21 +62,23 @@ export default class Home extends Component {
         </Link>
         <div className="div-main">
           <Categories />
-          <section>
-            <input
-              data-testid="query-input"
-              type="text"
-              name="search"
-              value={ busca }
-              onChange={ this.handleOnChange }
-            />
-            <button
-              data-testid="query-button"
-              type="button"
-              onClick={ this.handleClick }
-            >
-              Pesquisar
-            </button>
+          <section className="div-principal">
+            <div>
+              <input
+                data-testid="query-input"
+                type="text"
+                name="search"
+                value={ busca }
+                onChange={ this.handleOnChange }
+              />
+              <button
+                data-testid="query-button"
+                type="button"
+                onClick={ this.handleClick }
+              >
+                Pesquisar
+              </button>
+            </div>
             <div className="lista-de-produtos">
               { this.retornaProducts() }
             </div>

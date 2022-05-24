@@ -6,7 +6,7 @@
 .div-categories {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 20%;
 }
 
 .cada-categoria {
@@ -16,7 +16,15 @@
 
 .btn-categoria {
   padding: 5px;
-  width: 60%;
+  width: 90%;
+}
+
+.div-principal {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  width: 70%;
 }
 
 .lista-de-produtos {
