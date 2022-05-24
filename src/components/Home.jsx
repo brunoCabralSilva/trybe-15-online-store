@@ -11,10 +11,6 @@ export default class Home extends Component {
     busca: '',
     lista: [],
   }
-  // this.state = {
-  //   searchField: '',
-  //   listProducts: [],
-  // };
 
   handleOnChange = async ({ target }) => {
     const { value } = target;
@@ -64,23 +60,27 @@ export default class Home extends Component {
         <Link data-testid="shopping-cart-button" to="/cartShopping">
           Carrinho de Compras
         </Link>
-        <Categories />
-        <input
-          data-testid="query-input"
-          type="text"
-          name="search"
-          value={ busca }
-          onChange={ this.handleOnChange }
-        />
-        <button
-          data-testid="query-button"
-          type="button"
-          onClick={ this.handleClick }
-        >
-          Pesquisar
-        </button>
-        <div className="lista-de-produtos">
-          { this.retornaProducts() }
+        <div className="div-main">
+          <Categories />
+          <section>
+            <input
+              data-testid="query-input"
+              type="text"
+              name="search"
+              value={ busca }
+              onChange={ this.handleOnChange }
+            />
+            <button
+              data-testid="query-button"
+              type="button"
+              onClick={ this.handleClick }
+            >
+              Pesquisar
+            </button>
+            <div className="lista-de-produtos">
+              { this.retornaProducts() }
+            </div>
+          </section>
         </div>
       </div>
     );

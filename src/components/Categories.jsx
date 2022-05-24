@@ -14,17 +14,19 @@ class Categories extends Component {
   render() {
     const { categories } = this.state;
     return (
-      <aside>
+      <aside className="div-categories">
         <ul>
           Categorias:
           {
             categories.map((categorie) => (
-              <input
-                data-testid="category"
-                key={ categorie.id }
-                type="button"
-                value={ categorie.name }
-              />
+              <li key={ categorie.id } className="cada-categoria">
+                <input
+                  className="btn-categoria"
+                  data-testid="category"
+                  type="button"
+                  value={ categorie.name }
+                />
+              </li>
             ))
           }
         </ul>
