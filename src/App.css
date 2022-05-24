@@ -1,42 +1,59 @@
-.App {
-  text-align: center;
+.div-main {
+  display: flex;
+  flex-direction: row;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.div-categories {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
 }
 
-@media ( prefers-reduced-motion : no-preference ) {
-
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-
+.cada-categoria {
+  list-style-type: none;
+  margin: 10px;
 }
 
-.App-header {
+.btn-categoria {
+  padding: 5px;
+  width: 90%;
+}
+
+.div-principal {
   align-items: center;
-  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  width: 70%;
+}
+
+.lista-de-produtos {
+  align-items: center;
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.produtos-encontrados {
+  align-items: center;
+  background-color: rgb(0, 0, 0, 0.6);
   color: white;
   display: flex;
   flex-direction: column;
-  font-size: calc(10px + 2vmin);
+  height: 260px;
   justify-content: center;
-  min-height: 100vh;
+  margin: 10px;
+  padding: 10px;
+  width: 20%;
 }
 
-.App-link {
-  color: #61dafb;
+.produtos-encontrados p {
+  text-align: center;
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
+.imagem-produto {
+  width: 60%;
 }
