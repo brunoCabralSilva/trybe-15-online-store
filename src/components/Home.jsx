@@ -1,34 +1,61 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { getProductsFromCategoryAndQuery } from '../services/api';
+import { getProductsFromQuery } from '../services/api';
 import Categories from './Categories';
-import ListProducts from './ListProducts';
-import Products from './Products';
+import '../App.css';
+// import ListProducts from './ListProducts';
+// import Products from './Products';
 
 export default class Home extends Component {
-  constructor() {
-    super();
-    this.state = {
-      searchField: '',
-      listProducts: [],
-    };
+  state = {
+    busca: '',
+    lista: [],
+  }
+  // this.state = {
+  //   searchField: '',
+  //   listProducts: [],
+  // };
 
-    this.handleSearch = this.handleSearch.bind(this);
-    this.handleOnChange = this.handleOnChange.bind(this);
+  handleOnChange = async ({ target }) => {
+    const { value } = target;
+    this.setState({ busca: value });
   }
 
-  async handleSearch(srcVal) {
-    const products = await getProductsFromCategoryAndQuery(undefined, srcVal);
-    this.setState({ listProducts: products.results });
+  handleClick = async () => {
+    const { busca } = this.state;
+    const resultado = await getProductsFromQuery(busca);
+    this.setState({ lista: resultado.results });
   }
 
-  handleOnChange({ target: { name, type, checked, value } }) {
-    const checkedValue = type === 'checkbox' ? checked : value;
-    this.setState({ [name]: checkedValue });
+  retornaProducts = () => {
+    const { lista } = this.state;
+    if (lista.length === 0) {
+      return (
+        <div>
+          <h2>Nenhum produto foi encontrado</h2>
+        </div>
+      );
+    }
+    const listaDeProdutos = lista.map((produto) => {
+      const product = (
+        <div data-testid="product" className="produtos-encontrados">
+          <p>{ produto.title }</p>
+          <img
+            src={ produto.thumbnail }
+            alt={ `imagem de ${produto.title}` }
+            className="imagem-produto"
+          />
+          <p>{ produto.price }</p>
+        </div>
+      );
+      return product;
+    });
+    return listaDeProdutos;
   }
 
   render() {
-    const { searchField, listProducts } = this.state;
+    const { busca, lista } = this.state;
+    console.log(lista);
     return (
       <div>
         <div data-testid="home-initial-message">
@@ -38,13 +65,23 @@ export default class Home extends Component {
           Carrinho de Compras
         </Link>
         <Categories />
-        <ListProducts
-          onClick={ this.handleSearch(searchField) }
+        <input
+          data-testid="query-input"
+          type="text"
+          name="search"
+          value={ busca }
           onChange={ this.handleOnChange }
-          value={ searchField }
         />
-        { listProducts ? (<Products listProducts={ listProducts } />)
-          : (<p>Nenhum produto foi encontrado</p>) }
+        <button
+          data-testid="query-button"
+          type="button"
+          onClick={ this.handleClick }
+        >
+          Pesquisar
+        </button>
+        <div className="lista-de-produtos">
+          { this.retornaProducts() }
+        </div>
       </div>
     );
   }
