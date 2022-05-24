@@ -17,8 +17,8 @@ export default class ListProducts extends Component {
   }
 }
 
-ListProducts.propTypes = {
-    value: PropTypes.func.isrequired,
-    onChange: PropTypes.func.isrequired,
-    onClick: PropTypes.func.isrequired,
-};
+// ListProducts.propTypes = {
+//     value: PropTypes.func.isrequired,
+//     onChange: PropTypes.func.isrequired,
+//     onClick: PropTypes.func.isrequired,
+// };
