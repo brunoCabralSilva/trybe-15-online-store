@@ -104,10 +104,12 @@ header img {
   list-style-type: none;
   margin-left: 100px;
   padding: 10px;
+  text-decoration: none;
 }
 
 .link-shopping-cart:hover {
   background-color: rgb(0, 61, 0);
+  text-decoration: none;
 }
 
 .lista-de-produtos {
@@ -121,24 +123,69 @@ header img {
 }
 
 .produtos-encontrados {
-  align-items: center;
   background-color: rgb(134, 177, 134);
   border-radius: 7px;
   color: black;
-  display: flex;
-  flex-direction: column;
   height: 260px;
-  justify-content: space-between;
   margin: 10px;
-  padding: 15px;
+  padding: 10px;
+  text-decoration: none;
   width: 20%;
 }
 
-.produtos-encontrados p {
+.div-produtos-encontrados {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.produtos-encontrados-title {
+  padding-bottom: 15px;
   text-align: center;
   width: 100%;
 }
 
 .imagem-produto {
+  padding-bottom: 15px;
   width: 60%;
+}
+
+.div-product-id {
+  display: flex;
+  flex-direction: column;
+}
+
+.informations-product-id {
+  display: flex;
+  flex-direction: row;
+}
+
+.informations-product-id div {
+  align-items: center;
+  background-color: rgb(134, 177, 134);
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.div-product-id div img {
+  border-radius: 10px;
+  width: 65%;
+}
+
+.div-product-id div h2 {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.div-product-id ul {
+  margin-left: 20px;
+  padding: 50px;
+  width: 50%;
+}
+
+.product-atributos-id {
+  list-style-type: none;
+  padding-top: 10px;
 }

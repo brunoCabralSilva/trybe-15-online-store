@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Home from './components/Home';
 import cartShopping from './components/cartShopping';
+import Product from './components/Product';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={ Home } />
         <Route path="/cartShopping" component={ cartShopping } />
+        <Route path="/product/:id" component={ Product } />
       </Switch>
     </BrowserRouter>
   );
