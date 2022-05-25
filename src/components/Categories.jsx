@@ -17,8 +17,8 @@ class Categories extends Component {
     const { buscaPorCategoria } = this.props;
     return (
       <aside className="div-categories">
-        <ul>
-          Categorias:
+        <ul className="ul-categories">
+          <p>Categorias:</p>
           {
             categories.map((categorie) => (
               <li key={ categorie.id } className="cada-categoria">
