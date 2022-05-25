@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { getProductsFromQuery } from '../services/api';
+import { getProductsFromQuery, getProductsByCategorie } from '../services/api';
 import Categories from './Categories';
 import '../App.css';
 // import ListProducts from './ListProducts';
@@ -34,7 +34,11 @@ export default class Home extends Component {
     }
     const listaDeProdutos = lista.map((produto) => {
       const product = (
-        <div data-testid="product" className="produtos-encontrados">
+        <div
+          data-testid="product"
+          className="produtos-encontrados"
+          key={ produto.id }
+        >
           <p>{ produto.title }</p>
           <img
             src={ produto.thumbnail }
@@ -49,6 +53,12 @@ export default class Home extends Component {
     return listaDeProdutos;
   }
 
+  buscaPorCategoria = async ({ target }) => {
+    const { name } = target;
+    const produtosCat = await getProductsByCategorie(name);
+    this.setState({ lista: produtosCat.results });
+  }
+
   render() {
     const { busca, lista } = this.state;
     console.log(lista);
@@ -61,7 +71,7 @@ export default class Home extends Component {
           Carrinho de Compras
         </Link>
         <div className="div-main">
-          <Categories />
+          <Categories buscaPorCategoria={ this.buscaPorCategoria } />
           <section className="div-principal">
             <div>
               <input
