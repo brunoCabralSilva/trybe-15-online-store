@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
-import Home from './components/Home';
-import cartShopping from './components/cartShopping';
-import Product from './components/Product';
+import Home from './pages/Home';
+import cartShopping from './pages/cartShopping';
+import ProductDetails from './pages/ProductDetails';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={ Home } />
         <Route path="/cartShopping" component={ cartShopping } />
-        <Route path="/product/:id" component={ Product } />
+        <Route path="/productDetails/:id" component={ ProductDetails } />
       </Switch>
     </BrowserRouter>
   );
