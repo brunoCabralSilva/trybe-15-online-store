@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { getProductsFromQuery, getProductsByCategorie } from '../services/api';
-import Categories from './Categories';
+import Categories from '../components/Categories';
 import '../App.css';
 import imgTrybe from '../imagens/trybe.png';
 
@@ -45,7 +45,7 @@ export default class Home extends Component {
       const product = (
         <Link
           data-testid="product-detail-link"
-          to={ `product/${produto.id}` }
+          to={ `productDetails/${produto.id}` }
           className="produtos-encontrados"
           key={ produto.id }
         >
