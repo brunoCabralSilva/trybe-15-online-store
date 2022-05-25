@@ -4,17 +4,11 @@ import { getProductsById } from '../services/api';
 import Product from '../components/Product';
 
 export default class ProductDetails extends React.Component {
-  constructor(props) {
-    super(props);
-    this.retornaProduct = this.retornaProduct.bind(this);
-    this.state = { product: {} };
+  state = {
+    product: {},
   }
 
-  componentDidMount() {
-    this.retornaProduct();
-  }
-
-  retornaProduct = async () => {
+  async componentDidMount() {
     const { match } = this.props;
     const { params } = match;
     const { id } = params;
@@ -27,11 +21,14 @@ export default class ProductDetails extends React.Component {
     console.log(product);
     return (
       <div>
-        <Product
-          titulo={ product.title }
-          custo={ product.price }
-          imagem={ product.thumbnail }
-        />
+        { product.title && (
+          <Product
+            titulo={ product.title }
+            custo={ product.price }
+            imagem={ product.pictures[0].url }
+            atributos={ product.attributes }
+          />
+        ) }
       </div>
     );
   }

@@ -8,6 +8,7 @@ export default class Product extends React.Component {
       titulo,
       custo,
       imagem,
+      atributos,
     } = this.props;
     return (
       <div className="div-product-id">
@@ -23,6 +24,14 @@ export default class Product extends React.Component {
           </div>
           <ul>
             <h2>Especificações Técnicas:</h2>
+            {
+              atributos.map((atributo) => (
+                <li key={ atributo.id } className="product-atributos-id">
+                  <strong>{ `${atributo.name}: ` }</strong>
+                  <span>{ atributo.value_name }</span>
+                </li>
+              ))
+            }
           </ul>
         </div>
       </div>
@@ -34,4 +43,5 @@ Product.propTypes = {
   titulo: PropTypes.string.isRequired,
   custo: PropTypes.number.isRequired,
   imagem: PropTypes.string.isRequired,
+  atributos: PropTypes.string.isRequired,
 };
