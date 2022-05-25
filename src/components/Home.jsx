@@ -43,19 +43,22 @@ export default class Home extends Component {
     }
     const listaDeProdutos = lista.map((produto) => {
       const product = (
-        <div
-          data-testid="product"
+        <Link
+          data-testid="product-detail-link"
+          to={ `product/${produto.id}` }
           className="produtos-encontrados"
           key={ produto.id }
         >
-          <p className="produtos-encontrados-title">{ produto.title }</p>
-          <img
-            src={ produto.thumbnail }
-            alt={ `imagem de ${produto.title}` }
-            className="imagem-produto"
-          />
-          <p>{ produto.price }</p>
-        </div>
+          <div data-testid="product" className="div-produtos-encontrados">
+            <p className="produtos-encontrados-title">{ produto.title }</p>
+            <img
+              src={ produto.thumbnail }
+              alt={ `imagem de ${produto.title}` }
+              className="imagem-produto"
+            />
+            <p>{ produto.price }</p>
+          </div>
+        </Link>
       );
       return product;
     });
@@ -69,8 +72,7 @@ export default class Home extends Component {
   }
 
   render() {
-    const { busca, lista } = this.state;
-    console.log(lista);
+    const { busca } = this.state;
     return (
       <div>
         <header>
