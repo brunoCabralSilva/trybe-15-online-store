@@ -49,6 +49,7 @@ export default class ProductList extends React.Component {
               </Link>
               <button
                 type="button"
+                className="adicionar-ao-carrinho-productList"
                 data-testid="product-add-to-cart"
                 value={ produto.id }
                 onClick={ adicionaAoCarrinho }

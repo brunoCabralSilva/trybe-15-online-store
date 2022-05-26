@@ -4,6 +4,7 @@ import '../App.css';
 import Header from '../components/Header';
 import SearchProduct from '../components/SearchProduct';
 import ProductList from '../components/ProductList';
+
 import {
   getProductsFromQuery,
   getProductsByCategorie,

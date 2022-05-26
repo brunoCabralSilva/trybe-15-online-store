@@ -198,3 +198,21 @@ header img {
   list-style-type: none;
   padding-top: 10px;
 }
+
+.adicionar-ao-carrinho-productList {
+  background-color: green;
+  color: white;
+  list-style-type: none;
+  margin-left: 25px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.adicionar-ao-carrinho-productDetails {
+  background-color: green;
+  color: white;
+  list-style-type: none;
+  margin-left: 70%;
+  padding: 10px;
+  text-decoration: none;
+}
