@@ -113,7 +113,7 @@ header img {
 }
 
 .lista-de-produtos {
-  align-items: center;
+  align-items: baseline;
   display: flex;
   flex-flow: wrap;
   flex-direction: row;
@@ -122,11 +122,20 @@ header img {
   width: 100%;
 }
 
+.produtos-enc {
+  background-color: rgb(134, 177, 134);
+  border-radius: 7px;
+  color: black;
+  margin: 10px;
+  padding: 10px;
+  text-decoration: none;
+  width: 20%;
+}
+
 .produtos-encontrados {
   background-color: rgb(134, 177, 134);
   border-radius: 7px;
   color: black;
-  height: 260px;
   margin: 10px;
   padding: 10px;
   text-decoration: none;
