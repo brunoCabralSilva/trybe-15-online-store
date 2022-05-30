@@ -257,3 +257,14 @@ header img {
 .link-product-home img {
   width: 40%;
 }
+
+.conteudo-carrinho {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.conteudo-carrinho h2 {
+  font-size: 30px;
+  margin-top: 20px;
+}

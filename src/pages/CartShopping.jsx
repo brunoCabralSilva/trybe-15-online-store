@@ -33,19 +33,19 @@ export default class CartShopping extends React.Component {
 
   render() {
     const { carrinho } = this.state;
-    if (carrinho === null) {
+    if (carrinho.length === 0) {
       return (
-        <div>
+        <div className="conteudo-carrinho">
           <Header />
-          <h1>Bem vindo ao carrinho de compras</h1>
-          <h1 data-testid="shopping-cart-empty-message">Seu carrinho está vazio</h1>
+          <h2>Bem vindo ao carrinho de compras</h2>
+          <h2 data-testid="shopping-cart-empty-message">Seu carrinho está vazio</h2>
         </div>
       );
     }
     return (
-      <div>
+      <div className="conteudo-carrinho">
         <Header />
-        <h1>Bem vindo ao carrinho de compras</h1>
+        <h2>Bem vindo ao carrinho de compras</h2>
         <div className="lista-de-produtos">
           {
             this.listaCarrinho().map((produto) => (
