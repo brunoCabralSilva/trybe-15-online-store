@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
+import QuantButtons from '../components/QuantButtons';
 
 export default class CartShopping extends React.Component {
   state = {
@@ -23,12 +24,6 @@ export default class CartShopping extends React.Component {
       }
     });
     return arrayCarrinho;
-  }
-
-  quantidade = (produto) => {
-    const { carrinho } = this.state;
-    const quantidade = carrinho.filter((product) => product.id === produto.id);
-    return quantidade.length;
   }
 
   render() {
@@ -66,14 +61,7 @@ export default class CartShopping extends React.Component {
                     className="imagem-produto"
                   />
                   <p>{ produto.price }</p>
-                  <p>
-                    <strong>{ 'Quantidade: ' }</strong>
-                    <span
-                      data-testid="shopping-cart-product-quantity"
-                    >
-                      { this.quantidade(produto) }
-                    </span>
-                  </p>
+                  <QuantButtons />
                 </div>
               </div>
             ))
