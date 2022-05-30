@@ -7,7 +7,6 @@ import ProductList from '../components/ProductList';
 import {
   getProductsFromQuery,
   getProductsByCategorie,
-  getProductsById,
 } from '../services/api';
 
 export default class Home extends Component {
@@ -37,11 +36,9 @@ export default class Home extends Component {
     });
   }
 
-  adicionaAoCarrinho = async ({ target }) => {
-    const { value } = target;
-    const objetoProduto = await getProductsById(value);
+  adicionaAoCarrinho = (produto) => {
     this.setState((anterior) => ({
-      listaDeCarrinho: [...anterior.listaDeCarrinho, objetoProduto],
+      listaDeCarrinho: [...anterior.listaDeCarrinho, produto],
     }));
   }
 
@@ -58,7 +55,7 @@ export default class Home extends Component {
         <Header />
         <div className="div-main">
           <Categories buscaPorCategoria={ this.buscaPorCategoria } />
-          <div className="lista-de-produtos">
+          <div className="lista">
             <SearchProduct
               handleClick={ this.handleClick }
               handleOnChange={ this.handleOnChange }

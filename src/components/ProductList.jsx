@@ -8,7 +8,7 @@ export default class ProductList extends React.Component {
     const { lista, valor } = this.props;
     if (lista.length === 0) {
       return (
-        <div>
+        <div className="mensagem-inicial">
           <h2>
             {
               valor === 0
@@ -51,7 +51,7 @@ export default class ProductList extends React.Component {
                 type="button"
                 data-testid="product-add-to-cart"
                 value={ produto.id }
-                onClick={ adicionaAoCarrinho }
+                onClick={ () => adicionaAoCarrinho(produto) }
               >
                 Adicionar ao Carrinho
               </button>
