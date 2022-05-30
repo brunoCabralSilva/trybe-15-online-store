@@ -4,6 +4,7 @@ import '../App.css';
 import Header from '../components/Header';
 import SearchProduct from '../components/SearchProduct';
 import ProductList from '../components/ProductList';
+
 import {
   getProductsFromQuery,
   getProductsByCategorie,
@@ -36,6 +37,8 @@ export default class Home extends Component {
     });
   }
 
+  // estavamos usando a função de forma desnecessária. O teste não aguardava uma função assincrona. Então não dava certo.
+  // e como já tinhamos os dados, estavamos puxando os dados que não precisava.
   adicionaAoCarrinho = (produto) => {
     this.setState((anterior) => ({
       listaDeCarrinho: [...anterior.listaDeCarrinho, produto],

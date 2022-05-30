@@ -49,8 +49,10 @@ export default class ProductList extends React.Component {
               </Link>
               <button
                 type="button"
+                className="adicionar-ao-carrinho-productList"
                 data-testid="product-add-to-cart"
                 value={ produto.id }
+                // quando passar função com parametros se usa arrow function, estamos passando os dados do PRODUTO.
                 onClick={ () => adicionaAoCarrinho(produto) }
               >
                 Adicionar ao Carrinho
