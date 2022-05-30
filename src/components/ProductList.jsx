@@ -35,7 +35,7 @@ export default class ProductList extends React.Component {
               <Link
                 data-testid="product-detail-link"
                 to={ `productDetails/${produto.id}` }
-                className="produtos-encontrados"
+                className="produtos-encontrados_list"
               >
                 <div data-testid="product" className="div-produtos-encontrados">
                   <p className="produtos-encontrados-title">{ produto.title }</p>

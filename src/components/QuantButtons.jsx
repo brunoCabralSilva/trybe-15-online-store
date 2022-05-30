@@ -21,23 +21,25 @@ export default class QuantButtons extends Component {
   render() {
     const { quantidade } = this.state;
     return (
-      <>
+      <div className="buttons-add-remove">
         <input
           data-testid="product-decrease-quantity"
+          className="btn-add-remove"
           type="button"
           value="-"
           onClick={ this.handleQuant }
         />
-        <div data-testid="shopping-cart-product-quantity">
+        <div data-testid="shopping-cart-product-quantity" className="quantidade">
           {quantidade}
         </div>
         <input
           data-testid="product-increase-quantity"
+          className="btn-add-remove"
           type="button"
           value="+"
           onClick={ this.handleQuant }
         />
-      </>
+      </div>
     );
   }
 }
