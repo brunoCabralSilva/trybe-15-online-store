@@ -37,9 +37,9 @@ export default class Home extends Component {
     });
   }
 
-  adicionaAoCarrinho = async (produto) => {
-    // estavamos usando a função de forma desnecessária. O teste não aguardava uma função assincrona. Então não dava certo.
-    // e como já tinhamos os dados, estavamos puxando os dados que não precisava.
+  // estavamos usando a função de forma desnecessária. O teste não aguardava uma função assincrona. Então não dava certo.
+  // e como já tinhamos os dados, estavamos puxando os dados que não precisava.
+  adicionaAoCarrinho = (produto) => {
     this.setState((anterior) => ({
       listaDeCarrinho: [...anterior.listaDeCarrinho, produto],
     }));
@@ -58,7 +58,7 @@ export default class Home extends Component {
         <Header />
         <div className="div-main">
           <Categories buscaPorCategoria={ this.buscaPorCategoria } />
-          <div className="lista-de-produtos">
+          <div className="lista">
             <SearchProduct
               handleClick={ this.handleClick }
               handleOnChange={ this.handleOnChange }

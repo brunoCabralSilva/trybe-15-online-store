@@ -34,7 +34,7 @@ export default class SearchProduct extends React.Component {
           </button>
           <Link
             data-testid="shopping-cart-button"
-            to="/cartShopping"
+            to="/CartShopping"
             className="link-shopping-cart"
           >
             Carrinho de Compras

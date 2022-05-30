@@ -8,7 +8,7 @@ export default class ProductList extends React.Component {
     const { lista, valor } = this.props;
     if (lista.length === 0) {
       return (
-        <div>
+        <div className="mensagem-inicial">
           <h2>
             {
               valor === 0

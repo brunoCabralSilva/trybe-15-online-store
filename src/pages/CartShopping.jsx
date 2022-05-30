@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
 
-export default class cartShopping extends React.Component {
+export default class CartShopping extends React.Component {
   state = {
     carrinho: [],
   }
