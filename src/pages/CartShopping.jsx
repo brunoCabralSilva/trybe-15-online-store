@@ -28,7 +28,8 @@ export default class CartShopping extends React.Component {
 
   render() {
     const { carrinho } = this.state;
-    if (carrinho.length === 0) {
+    console.log(carrinho);
+    if (carrinho === null || carrinho.length === 0) {
       return (
         <div className="conteudo-carrinho">
           <Header />
