@@ -156,6 +156,23 @@ header img {
   margin: 10px;
   padding: 10px;
   text-decoration: none;
+  width: 15%;
+}
+
+.buttons-add-remove {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.quantidade {
+  margin: 0 20px;
+}
+
+.btn-add-remove {
+  font-size: 20px;
+  padding: 5px;
   width: 100%;
 }
 
