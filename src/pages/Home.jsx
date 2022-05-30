@@ -8,7 +8,6 @@ import ProductList from '../components/ProductList';
 import {
   getProductsFromQuery,
   getProductsByCategorie,
-  getProductsById,
 } from '../services/api';
 
 export default class Home extends Component {
@@ -38,11 +37,11 @@ export default class Home extends Component {
     });
   }
 
-  adicionaAoCarrinho = async ({ target }) => {
-    const { value } = target;
-    const objetoProduto = await getProductsById(value);
+  adicionaAoCarrinho = async (produto) => {
+    // estavamos usando a função de forma desnecessária. O teste não aguardava uma função assincrona. Então não dava certo.
+    // e como já tinhamos os dados, estavamos puxando os dados que não precisava.
     this.setState((anterior) => ({
-      listaDeCarrinho: [...anterior.listaDeCarrinho, objetoProduto],
+      listaDeCarrinho: [...anterior.listaDeCarrinho, produto],
     }));
   }
 
