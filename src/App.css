@@ -159,6 +159,16 @@ header img {
   width: 15%;
 }
 
+.produtos-encontrados_list {
+  background-color: rgb(134, 177, 134);
+  border-radius: 7px;
+  color: black;
+  margin: 10px;
+  padding: 10px;
+  text-decoration: none;
+  width: 100%;
+}
+
 .buttons-add-remove {
   align-items: center;
   display: flex;
