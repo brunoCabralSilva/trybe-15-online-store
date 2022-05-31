@@ -1,6 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import QuantButtons from '../components/QuantButtons';
+import imgTrybe from '../imagens/trybe.png';
 
 export default class CartShopping extends React.Component {
   state = {
@@ -40,7 +42,15 @@ export default class CartShopping extends React.Component {
     }
     return (
       <div className="conteudo-carrinho">
-        <Header />
+        <header>
+          <Link to="/" className="link-product-home">
+            <img src={ imgTrybe } alt="logo da trybe" className="logo-trybe" />
+          </Link>
+          <Link to="/checkout" data-testid="checkout-products">
+            <h2>Finalizar Compra</h2>
+          </Link>
+        </header>
+        {' '}
         <h2>Bem vindo ao carrinho de compras</h2>
         <div className="lista-de-produtos">
           {
