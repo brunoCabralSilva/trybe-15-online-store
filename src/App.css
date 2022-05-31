@@ -5,7 +5,7 @@
 
 header {
   align-items: center;
-  background-image: linear-gradient(to bottom right, green, rgb(0, 75, 0), rgb(0, 75, 0), green);
+  background-image: linear-gradient(to bottom right, green, rgb(0, 75, 0), green);
   color: white;
   display: flex;
   flex-direction: row;
@@ -21,7 +21,7 @@ header img {
 }
 
 .div-main {
-  background: url('../src/imagens/e-commerce.jpg') center center no-repeat fixed; 
+  background: url('../src/imagens/e-commerce.jpg') center center no-repeat fixed;
   background-size: 100%;
   display: flex;
   flex-direction: row;
@@ -29,7 +29,7 @@ header img {
 
 .div-categories {
   align-items: center;
-  background-image: linear-gradient(to bottom right, green, rgb(0, 75, 0), rgb(0, 75, 0), green);
+  background-image: linear-gradient(to bottom right, green, rgb(0, 75, 0), green);
   display: flex;
   flex-direction: column;
   margin: 2px;
@@ -80,7 +80,7 @@ header img {
 }
 
 .mensagem-inicial {
-  background-image: linear-gradient(to right, rgb(0, 75, 0), rgb(0, 75, 0), transparent, transparent, transparent);
+  background-image: linear-gradient(to right, rgb(0, 75, 0), transparent, transparent);
   color: white;
   margin-left: 10px;
   padding: 10px;
@@ -163,30 +163,16 @@ header img {
 
 .produtos-enc {
   align-items: left;
-  background-image: linear-gradient(to bottom right, green, rgb(190, 223, 190), rgb(190, 223, 190), rgb(190, 223, 190), rgb(180, 211, 180), green);
-  justify-content: space-around;
+  background-color: white;
   border-radius: 5px;
   color: white;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   margin: 10px;
   padding: 5px;
   text-decoration: none;
   width: 20%;
-}
-
-.produtos-encontrados {
-  align-items: left;
-  background-image: linear-gradient(to bottom right, green, rgb(190, 223, 190), rgb(190, 223, 190), rgb(190, 223, 190), rgb(180, 211, 180), green);
-  justify-content: space-around;
-  border-radius: 5px;
-  color: black;
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
-  padding: 5px;
-  text-decoration: none;
-  width: 15%;
 }
 
 .produtos-encontrados_list {
@@ -247,30 +233,29 @@ header img {
   display: flex;
 }
 
+.conteudo-carrinho {
+  align-items: left;
+  background: url('../src/imagens/e-commerce.jpg') no-repeat fixed;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 800px;
+}
+
+.conteudo-carrinho h2 {
+  background-image: linear-gradient(to right, rgb(0, 75, 0), transparent, transparent);
+  color: white;
+  font-size: 30px;
+  margin-top: 20px;
+  padding: 10px;
+  text-align: left;
+}
+
 .informations-product-id {
-  background: url('../src/imagens/e-commerce.jpg') no-repeat fixed; 
+  background: url('../src/imagens/e-commerce.jpg') no-repeat fixed;
   background-size: 100%;
   display: flex;
   flex-direction: row;
-}
-
-.informations-product-id div {
-  align-items: left;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-}
-
-.informations-product-id div h2 {
-  background-image: linear-gradient(to right, rgb(0, 75, 0), rgb(0, 75, 0), transparent);
-  margin-bottom: 10px;
-  color: white;
-  padding: 10px;
-  width: 100%;
-}
-
-.informations-product-id ul {
-  background-color: rgb(234, 248, 234, 0.8);
 }
 
 .div-product-id-header {
@@ -287,6 +272,25 @@ header img {
 .div-product-id-header h2 {
   margin-bottom: 50px;
   text-align: center;
+}
+
+.informations-product-id div {
+  align-items: left;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.informations-product-id div h2 {
+  background-image: linear-gradient(to right, rgb(0, 75, 0), rgb(0, 75, 0), transparent);
+  color: white;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+.informations-product-id ul {
+  background-color: rgb(234, 248, 234, 0.8);
 }
 
 .div-product-id ul {
@@ -341,20 +345,3 @@ header img {
   width: 40%;
 }
 
-.conteudo-carrinho {
-  align-items: left;
-  background: url('../src/imagens/e-commerce.jpg') no-repeat fixed; 
-  background-size: 100%;
-  display: flex;
-  flex-direction: column;
-  min-height: 800px;
-}
-
-.conteudo-carrinho h2 {
-  background-image: linear-gradient(to right, rgb(0, 75, 0), rgb(0, 75, 0), transparent, transparent, transparent);
-  color: white;
-  font-size: 30px;
-  margin-top: 20px;
-  padding: 10px;
-  text-align: left;
-}
