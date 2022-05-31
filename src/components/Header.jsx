@@ -9,7 +9,6 @@ export default class Header extends React.Component {
         <Link to="/" className="link-product-home">
           <img src={ imgTrybe } alt="logo da trybe" className="logo-trybe" />
         </Link>
-        <h1>Trybe Frontend Online Store</h1>
       </header>
     );
   }

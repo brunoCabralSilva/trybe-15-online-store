@@ -1,7 +1,6 @@
 import React from 'react';
 import '../App.css';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 
 export default class SearchProduct extends React.Component {
   render() {
@@ -32,13 +31,6 @@ export default class SearchProduct extends React.Component {
           >
             Pesquisar
           </button>
-          <Link
-            data-testid="shopping-cart-button"
-            to="/CartShopping"
-            className="link-shopping-cart"
-          >
-            Carrinho de Compras
-          </Link>
         </div>
       </section>
     );

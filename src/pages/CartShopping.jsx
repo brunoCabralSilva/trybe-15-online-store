@@ -46,22 +46,29 @@ export default class CartShopping extends React.Component {
           {
             this.listaCarrinho().map((produto) => (
               <div
-                className="produtos-encontrados"
+                className="produtos-enc"
                 key={ produto.id }
               >
-                <div className="div-produtos-encontrados">
-                  <p
-                    data-testid="shopping-cart-product-name"
-                    className="produtos-encontrados-title"
-                  >
-                    { produto.title }
-                  </p>
+                <div className="div-produtos-encontrados produtos-carrinho">
                   <img
                     src={ produto.thumbnail }
                     alt={ `imagem de ${produto.title}` }
                     className="imagem-produto"
                   />
-                  <p>{ produto.price }</p>
+                  <p
+                    data-testid="shopping-cart-product-name"
+                    className="produtos-encontrados-title"
+                  >
+                    <strong>
+                      { produto.title }
+                    </strong>
+                  </p>
+                  <p>
+                    {'R$ '}
+                    <strong>
+                      { produto.price }
+                    </strong>
+                  </p>
                   <QuantButtons />
                 </div>
               </div>

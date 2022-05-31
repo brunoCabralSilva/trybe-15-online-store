@@ -38,13 +38,22 @@ export default class ProductList extends React.Component {
                 className="produtos-encontrados_list"
               >
                 <div data-testid="product" className="div-produtos-encontrados">
-                  <p className="produtos-encontrados-title">{ produto.title }</p>
                   <img
                     src={ produto.thumbnail }
                     alt={ `imagem de ${produto.title}` }
                     className="imagem-produto"
                   />
-                  <p>{ produto.price }</p>
+                  <p className="produtos-encontrados-title">
+                    <strong>
+                      { produto.title }
+                    </strong>
+                  </p>
+                  <p className="produtos-encontrados-title preco">
+                    {'R$ '}
+                    <strong>
+                      { produto.price }
+                    </strong>
+                  </p>
                 </div>
               </Link>
               <button
