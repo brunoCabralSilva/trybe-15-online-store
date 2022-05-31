@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import Categories from '../components/Categories';
 import '../App.css';
-import Header from '../components/Header';
 import SearchProduct from '../components/SearchProduct';
 import ProductList from '../components/ProductList';
+import imgTrybe from '../imagens/trybe.png';
 
 import {
   getProductsFromQuery,
@@ -55,15 +56,26 @@ export default class Home extends Component {
     const { busca, lista, valor } = this.state;
     return (
       <div>
-        <Header />
+        <header>
+          <Link to="/" className="link-product-home">
+            <img src={ imgTrybe } alt="logo da trybe" className="logo-trybe" />
+          </Link>
+          <SearchProduct
+            handleClick={ this.handleClick }
+            handleOnChange={ this.handleOnChange }
+            busca={ busca }
+          />
+          <Link
+            data-testid="shopping-cart-button"
+            to="/CartShopping"
+            className="link-shopping-cart"
+          >
+            Carrinho de Compras
+          </Link>
+        </header>
         <div className="div-main">
           <Categories buscaPorCategoria={ this.buscaPorCategoria } />
           <div className="lista">
-            <SearchProduct
-              handleClick={ this.handleClick }
-              handleOnChange={ this.handleOnChange }
-              busca={ busca }
-            />
             <ProductList
               lista={ lista }
               valor={ valor }
