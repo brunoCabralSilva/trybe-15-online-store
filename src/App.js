@@ -6,11 +6,11 @@ import CartShopping from './pages/CartShopping';
 import ProductDetails from './pages/ProductDetails';
 import Checkout from './pages/Checkout';
 
-function App() {
+export default function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/" component={ Home } />
+        <Route exact path="/online-storage" component={ Home } />
         <Route path="/cartShopping" component={ CartShopping } />
         <Route path="/productDetails/:id" component={ ProductDetails } />
         <Route path="/checkout" component={ Checkout } />
@@ -18,5 +18,3 @@ function App() {
     </BrowserRouter>
   );
 }
-
-export default App;

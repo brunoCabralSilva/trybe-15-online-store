@@ -173,6 +173,15 @@ header img {
   padding: 5px;
   text-decoration: none;
   width: 20%;
+  height: 300px;
+}
+
+.imagem-produto {
+  border-radius: 10px;
+  padding-bottom: 15px;
+  width: 50%;
+  height: 20%;
+  object-fit: cover;
 }
 
 .produtos-encontrados_list {
@@ -215,12 +224,6 @@ header img {
 
 .preco {
   padding-bottom: 5px;
-}
-
-.imagem-produto {
-  border-radius: 10px;
-  padding-bottom: 15px;
-  width: 100%;
 }
 
 .div-product-id {
