@@ -1,16 +1,5 @@
-# 🚧 README em construção 🚧
+<h1 align="center">Online Store</h1>
 
-<!-- Olá, Tryber!
+<h3 align="center">https://brunocabralsilva.github.io/trybe-11-online-store</h3>
 
-Esse é apenas um arquivo inicial para o README do seu projeto.
-
-É essencial que você preencha esse documento por conta própria, ok?
-
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-
-⚠️ IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
-
--->
+<img src="src/imagens/e-commerce.jpg" alt="Online Store" />
