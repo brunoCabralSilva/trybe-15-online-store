@@ -43,7 +43,7 @@ export default class CartShopping extends React.Component {
     return (
       <div className="conteudo-carrinho">
         <header>
-          <Link to="/trybe-11-online-store" className="link-product-home">
+          <Link to="/trybe-15-online-store" className="link-product-home">
             <img src={ imgTrybe } alt="logo da trybe" className="logo-trybe" />
           </Link>
           <Link to="/checkout" data-testid="checkout-products">

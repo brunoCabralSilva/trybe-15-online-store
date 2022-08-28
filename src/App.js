@@ -10,7 +10,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/trybe-11-online-store" component={ Home } />
+        <Route exact path="/trybe-15-online-store" component={ Home } />
         <Route path="/cartShopping" component={ CartShopping } />
         <Route path="/productDetails/:id" component={ ProductDetails } />
         <Route path="/checkout" component={ Checkout } />
