@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/online-storage/static/css/main.b9d4f825.chunk.css",
-    "main.js": "/online-storage/static/js/main.5e986abb.chunk.js",
-    "main.js.map": "/online-storage/static/js/main.5e986abb.chunk.js.map",
-    "runtime-main.js": "/online-storage/static/js/runtime-main.4935b397.js",
-    "runtime-main.js.map": "/online-storage/static/js/runtime-main.4935b397.js.map",
-    "static/js/2.02204141.chunk.js": "/online-storage/static/js/2.02204141.chunk.js",
-    "static/js/2.02204141.chunk.js.map": "/online-storage/static/js/2.02204141.chunk.js.map",
-    "index.html": "/online-storage/index.html",
-    "precache-manifest.9ca0917936214a16a34a37b52877610b.js": "/online-storage/precache-manifest.9ca0917936214a16a34a37b52877610b.js",
-    "service-worker.js": "/online-storage/service-worker.js",
-    "static/css/main.b9d4f825.chunk.css.map": "/online-storage/static/css/main.b9d4f825.chunk.css.map",
-    "static/js/2.02204141.chunk.js.LICENSE.txt": "/online-storage/static/js/2.02204141.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/online-storage/static/media/e-commerce.18cf3e9c.jpg",
-    "static/media/trybe.png": "/online-storage/static/media/trybe.6d563617.png"
+    "main.css": "/trybe-11-online-storage/static/css/main.3cf38dca.chunk.css",
+    "main.js": "/trybe-11-online-storage/static/js/main.a2764e6b.chunk.js",
+    "main.js.map": "/trybe-11-online-storage/static/js/main.a2764e6b.chunk.js.map",
+    "runtime-main.js": "/trybe-11-online-storage/static/js/runtime-main.90f337fc.js",
+    "runtime-main.js.map": "/trybe-11-online-storage/static/js/runtime-main.90f337fc.js.map",
+    "static/js/2.02204141.chunk.js": "/trybe-11-online-storage/static/js/2.02204141.chunk.js",
+    "static/js/2.02204141.chunk.js.map": "/trybe-11-online-storage/static/js/2.02204141.chunk.js.map",
+    "index.html": "/trybe-11-online-storage/index.html",
+    "precache-manifest.30262f40e73d9c352b8d1a001c94c2fc.js": "/trybe-11-online-storage/precache-manifest.30262f40e73d9c352b8d1a001c94c2fc.js",
+    "service-worker.js": "/trybe-11-online-storage/service-worker.js",
+    "static/css/main.3cf38dca.chunk.css.map": "/trybe-11-online-storage/static/css/main.3cf38dca.chunk.css.map",
+    "static/js/2.02204141.chunk.js.LICENSE.txt": "/trybe-11-online-storage/static/js/2.02204141.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/trybe-11-online-storage/static/media/e-commerce.18cf3e9c.jpg",
+    "static/media/trybe.png": "/trybe-11-online-storage/static/media/trybe.6d563617.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.4935b397.js",
+    "static/js/runtime-main.90f337fc.js",
     "static/js/2.02204141.chunk.js",
-    "static/css/main.b9d4f825.chunk.css",
-    "static/js/main.5e986abb.chunk.js"
+    "static/css/main.3cf38dca.chunk.css",
+    "static/js/main.a2764e6b.chunk.js"
   ]
 }
