@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "066a9bce41426b133f4eca706124b8f4",
+    "revision": "1f7705a4420a39a6f9890cc31238cb06",
     "url": "/trybe-11-online-storage/index.html"
   },
   {
-    "revision": "f160936366e7476e1489",
+    "revision": "8b0ff02fa1a7147a5ff7",
     "url": "/trybe-11-online-storage/static/css/main.3cf38dca.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/trybe-11-online-storage/static/js/2.02204141.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f160936366e7476e1489",
-    "url": "/trybe-11-online-storage/static/js/main.a2764e6b.chunk.js"
+    "revision": "8b0ff02fa1a7147a5ff7",
+    "url": "/trybe-11-online-storage/static/js/main.27038f01.chunk.js"
   },
   {
     "revision": "a29f6eda54231486fba1",
