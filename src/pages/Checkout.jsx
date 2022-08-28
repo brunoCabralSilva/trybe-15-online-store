@@ -4,7 +4,7 @@ export default class Checkout extends Component {
   render() {
     return (
       <form action="">
-        <p>jesus</p>
+        <p>Form</p>
         <input
           data-testid="checkout-fullname"
           placeholder="Nome Completo"

@@ -6,7 +6,7 @@ export default class Header extends React.Component {
   render() {
     return (
       <header>
-        <Link to="/" className="link-product-home">
+        <Link to="/trybe-11-online-storage" className="link-product-home">
           <img src={ imgTrybe } alt="logo da trybe" className="logo-trybe" />
         </Link>
       </header>

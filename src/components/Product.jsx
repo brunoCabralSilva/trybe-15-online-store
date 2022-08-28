@@ -17,7 +17,7 @@ export default class Product extends React.Component {
       <div className="div-product-id">
         <header>
           <div className="div-product-id-header">
-            <Link to="/" className="link-product-home">
+            <Link to="/trybe-11-online-storage" className="link-product-home">
               <img src={ imgTrybe } alt="logo da trybe" className="logo-trybe" />
             </Link>
             <h1>Trybe Frontend Online Store</h1>
